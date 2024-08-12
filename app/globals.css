@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* ========================================== TAILWIND STYLES */
+body {
+  background: linear-gradient(123deg, rgb(13 16 11), rgb(39 43 41));
+}
+
 @layer base {
   /* Remove scrollbar */
   .remove-scrollbar::-webkit-scrollbar {

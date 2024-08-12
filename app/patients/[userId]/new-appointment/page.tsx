@@ -11,7 +11,7 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
           <Image
-            src="/dealo-care.png"
+            src="/dealo_logo.png"
             height={1000}
             width={1000}
             alt="logo"

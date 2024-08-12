@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/providers/theme-provider";
+import { Anek_Devanagari } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontAnek = Anek_Devanagari({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600"],
+  variable: "--font-anek",
+});
 
 export const metadata: Metadata = {
   title: "Dealo Care",
@@ -17,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={fontAnek.className}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
